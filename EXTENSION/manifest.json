@@ -1,6 +1,6 @@
 {
-  "name": "Append Test Text",
-  "description": "Add test123 to body",
+  "name": "DICTIONARY-EXTENSION",
+  "description": "This Extension shows the meaning of the word when we click on the Extension",
   "version": "1.0",
   "permissions": ["activeTab"],
   "background": {
