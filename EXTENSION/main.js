@@ -12,14 +12,14 @@ errors.textContent = "";
 // grab the form
 const form = document.querySelector(".form-data");
 // grab the country name
-const country = document.querySelector(".country-name");
+const word = document.querySelector(".word-name");
 
 // declare a method to search by country name
-const searchForCountry = async (countryName) => {
+const searchForword = async (wordName) => {
   loading.style.display = "block";
   errors.textContent = "";
   try {
-    const response = await (await fetch(`${api}/${countryName}`)).json();
+    const response = await (await fetch(`${api}/${wordName}`)).json();
     loading.style.display = "none";
     wordEle.innerText = response[0].word;
     phonetics.innerText = response[0].phonetics[0].text;
@@ -67,8 +67,8 @@ const searchForCountry = async (countryName) => {
 // declare a function to handle form submission
 const handleSubmit = async (e) => {
   e.preventDefault();
-  searchForCountry(country.value);
-  console.log(country.value);
+  searchForword(word.value);
+  console.log(word.value);
 };
 
 form.addEventListener("submit", (e) => handleSubmit(e));
