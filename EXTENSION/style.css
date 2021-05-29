@@ -92,3 +92,9 @@ form.data{
   font-size: 18px;
   color: #503088 ;
 }
+.errors{
+  font-size: 20px;
+  color: #503088;
+  text-align: center;
+  margin-top: 40px;
+}
