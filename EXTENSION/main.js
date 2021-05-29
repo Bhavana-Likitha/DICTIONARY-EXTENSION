@@ -60,7 +60,7 @@ const searchForword = async (wordName) => {
   } catch (error) {
     loading.style.display = "none";
     results.style.display = "none";
-    errors.textContent = "No Definition Found.";
+   <p class ="errors"> ${errors.textContent ="No Definition Found."}<p>`;
   }
 };
 
